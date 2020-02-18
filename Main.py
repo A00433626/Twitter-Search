@@ -10,8 +10,9 @@ import json
 from googlesearch import search
 
 #  Twitter Api Key 
-auth = tweepy.OAuthHandler('sbAnI5uPhos56fux65hxXwOE2', 'oy3C8JLvk7vMihtIzaXdAAd4cK2k28lBDhBcGQlq882Uuj2X4O')
-auth.set_access_token('20185148-y7BudlZah0DM05tnqKLNmPzX4lWNoL5wFVGe9Zlaz', 'RVabWxPeqSmjwxGDxoanQnKUAleXaGclNVA92F5HTESe8')
+#Twitter Devloper credentials
+auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
+auth.set_access_token(access_token, access_token_secret)
 api=tweepy.API(auth)
 # Testing Connection
 try:
